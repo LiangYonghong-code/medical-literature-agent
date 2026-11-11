@@ -1,0 +1,30 @@
+# ===== 密钥：绝对不能进 Git =====
+.env
+
+# ===== Python 虚拟环境 =====
+.venv/
+venv/
+
+# ===== Python 运行产物 =====
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ===== 数据：原始和中间数据不入库（体积大且可重新下载）=====
+# gold_set 是人工标注成果，需要入库，所以不忽略它
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ===== FAISS 索引等二进制产物 =====
+*.index
+*.faiss
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+
+# ===== 编辑器 =====
+.vscode/
+.idea/

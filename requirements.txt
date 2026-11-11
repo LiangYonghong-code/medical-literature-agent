@@ -1,0 +1,10 @@
+# 依赖随任务逐步添加，刻意不一次装全（避免装一堆用不上的东西）
+# 历史记录见 git log
+
+# --- 任务 3（PubMed 下载脚本）将添加 ---
+# requests
+
+# --- 任务 4（v0 检索流水线）将添加 ---
+# faiss-cpu
+# rank-bm25
+# sentence-transformers   # 包含 PyTorch，本地 BGE embedding 所需，体积较大
